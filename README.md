@@ -38,7 +38,7 @@ Following the diagram, some manual testing was performed with the data provided 
 To enhance the precision of our tests, we devised a Python script to automatically generate synthetic data, enabling us to conduct test cases with diverse datasets. This approach provided a comprehensive analysis of the application's behavior within real-life scenarios.
 
 #### Key Observations
-In addition to the bug identified during the exploratory testing session, we unearthed a new issue:
+In addition to the bug identified during the exploratory testing session, we discovered a new issue:
 
 * Through a semi-automated methodology and the generation of multiple sets of synthetic data, we identified a bug wherein certain files failed to transfer to the "Finals directory."
 For detailed information, please refer to the corresponding bug report [HERE](https://github.com/romaingrude/Extending_fake_data_challenge/issues/2).
