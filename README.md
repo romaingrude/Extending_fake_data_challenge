@@ -43,3 +43,8 @@ In addition to the bug identified during the exploratory testing session, we dis
 * Through a semi-automated methodology and the generation of multiple sets of synthetic data, we identified a bug wherein certain files failed to transfer to the "Finals directory."
 For detailed information, please refer to the corresponding bug report [HERE](https://github.com/romaingrude/Extending_fake_data_challenge/issues/2).
 
+* The application does not support multiple files with the same name (surname).
+
+
+## Report Summary
+In the course of our exploratory testing for the Extending_fake_data_challenge program, we validated the presence of error handling messages and confirmed the expected functionality of the program, addressing scenarios such as directory states and address formatting. However, a critical issue arose when using MacOS and moving files within the project directory, as outlined in Bug Report [#1](https://github.com/romaingrude/Extending_fake_data_challenge/issues/1). Subsequent manual testing, guided by a detailed test plan, demonstrated consistent success in meeting expected outcomes. Additionally, in our enhanced testing with partial automation, we discovered a new bug (Bug Report [#2](https://github.com/romaingrude/Extending_fake_data_challenge/issues/2), where certain files failed to transfer to the "Finals" directory. Notably, we observed that the application lacks support for handling multiple files with the same surname. Developers are urged to investigate and implement a solution for handling such cases.
