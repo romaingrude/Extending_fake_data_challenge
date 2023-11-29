@@ -33,3 +33,13 @@ Following the diagram, some manual testing was performed with the data provided 
 |Test_7	|Original to Allowlist - Updates to Finals	|YES|
 |Test_8|	Original - Different Allowlist - No Finals|	YES|
 |Test_9	|No Original - Updates to Finals	|YES|
+
+## Enhanced Testing and Partial Automation
+To enhance the precision of our tests, we devised a Python script to automatically generate synthetic data, enabling us to conduct test cases with diverse datasets. This approach provided a comprehensive analysis of the application's behavior within real-life scenarios.
+
+#### Key Observations
+In addition to the bug identified during the exploratory testing session, we unearthed a new issue:
+
+* Through a semi-automated methodology and the generation of multiple sets of synthetic data, we identified a bug wherein certain files failed to transfer to the "Finals directory."
+For detailed information, please refer to the corresponding bug report [HERE](https://github.com/romaingrude/Extending_fake_data_challenge/issues/2).
+
