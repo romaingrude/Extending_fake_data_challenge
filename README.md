@@ -20,22 +20,25 @@ However an issue was discovered when using MacOs and moving files within the pro
 
 <br>
 
-Following the diagram, some manual testing was performed with the data provided originally.
+Following the diagram, some manual and semi-automated testing was performed with the data provided originally as well as fake generated data.<br>
+* **Taking into consideration that a specific UK address format has been implemented in the application, the following manual and semi-automated tests all rely on the same format.** 
 
-|TEST CASES	|EXPECTED|	WORKING AS EXPECTED|
-|-|-|-|
-|Test_1|	Original dropped & No finals|	YES|
-|Test_2|	Original to Finals|	YES|
-|Test_3	|Updates to Finals	|YES|
-|Test_4|	Original dropped & Updates to Finals|	YES|
-|Test_5|	Dropped non-existant original & Updates to Finals	|YES|
-|Test_6|	Original to Allowlist to Finals|	YES|
-|Test_7	|Original to Allowlist - Updates to Finals	|YES|
-|Test_8|	Original - Different Allowlist - No Finals|	YES|
-|Test_9	|No Original - Updates to Finals	|YES|
+
+|TEST CASES	|EXPECTED|	WORKING AS EXPECTED WITH SINGLE DATA| WITH MULTIPLE DATA |
+|-|-|-|-|
+|Test_1|	Original dropped & No finals|	YES| YES |
+|Test_2|	Original to Finals|	YES| YES |
+|Test_3	|Updates to Finals	|YES| YES |
+|Test_4|	Original dropped & Updates to Finals|	YES| YES |
+|Test_5|	Dropped non-existant original & Updates to Finals	|YES| YES |
+|Test_6|	Original to Allowlist to Finals|	YES| YES |
+|Test_7	|Original to Allowlist - Updates to Finals	|YES| NO |
+|Test_8|	Original - Different Allowlist - No Finals|	YES| YES |
+|Test_9	|No Original - Updates to Finals	|YES| YES |
 
 ## Enhanced Testing and Partial Automation
 To enhance the precision of our tests, we devised a Python script to automatically generate synthetic data, enabling us to conduct test cases with diverse datasets. This approach provided a comprehensive analysis of the application's behavior within real-life scenarios.
+
 
 #### Key Observations
 In addition to the bug identified during the exploratory testing session, we discovered a new issue:
